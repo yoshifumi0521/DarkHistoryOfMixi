@@ -1,4 +1,14 @@
+#coding: utf-8
+#ルーティング
 DarkHistoryOfMixi::Application.routes.draw do
+  
+  #ログイン
+  get "login/index"
+  put "login/get"
+
+  #ルート
+  root :to => "login#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
